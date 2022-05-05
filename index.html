@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
 
     </header>
-    <main class="container">  
+    <main class="container">
+        <div class="btnanim">
+            <div class="stylebtn">
+                <h2>ARROW RIGHT ON HOVER</h2>
+                <div class="arrowright">
+                    <button>READ MORE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <h2>ARROW RIGHT ON HOVER</h2>
+                <div class="arrowdown">
+                    <button>READ MORE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <h2>ARROW RIGHT ON HOVER</h2>
+                <div class="arrowup">
+                    <button>READ MORE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="stylebtn">
+                <h2>RESIZE ON HOVER</h2>
+                <div class="rszbtn">
+                    <button>READ MORE </button>
+                </div>
+                <h2>ARROW RIGHT ON HOVER</h2>
+                <div class="arrowdown">
+                    <button>READ MORE </button>
+                </div>
+                <h2>ARROW RIGHT ON HOVER</h2>
+                <div class="arrowup">
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2>ARROW RIGHT ON HOVER</h2>
         <form id="form-perso" class="form-group" method="POST" action="upload.php" enctype="multipart/form-data">
             <div class="croix">
                 <div id="cross" class="Icon" onclick="getfile()">
-            </div>
-            <input type="file" id="hiddenfile" style="display:none" />
-            <!-- <input type="text" id="selectedfile" /> -->
-            <input type="button" id="fileinput" value="Select a file" onclick="getfile()" />
-            <select name="theme" id="theme" required="required">
-                <option value="">Choisir un theme</option>
-                <option id="Nature" value="Nature">Nature</option>
-                <option value="Animaux">Animaux</option>
-                <option value="Sport">Sport</option>
-                <option value="Oiseaux">Oiseaux</option>
-                <option value="autres">Autres</option>
-            </select>
-            <button class="btn btn-primary" type="submit">Ajouter</button>
+                </div>
+                <input type="file" id="hiddenfile" style="display:none" />
+                <!-- <input type="text" id="selectedfile" /> -->
+                <input type="button" id="fileinput" value="Select a file" onclick="getfile()" />
+                <select name="theme" id="theme" required="required">
+                    <option value="">Choisir un theme</option>
+                    <option id="Nature" value="Nature">Nature</option>
+                    <option value="Animaux">Animaux</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Oiseaux">Oiseaux</option>
+                    <option value="autres">Autres</option>
+                </select>
+                <button class="btn btn-primary" type="submit">Ajouter</button>
         </form>
     </main>
     <footer>
@@ -35,4 +70,5 @@
     </footer>
     <script src="/assets/JS/script.js"></script>
 </body>
+
 </html>
